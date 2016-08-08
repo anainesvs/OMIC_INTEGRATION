@@ -36,7 +36,7 @@ missing values were imputed.
    Gge<-tcrossprod(Xge)                      #computing crossproductcts
    Gge<-Gge/mean(diag(Gge))                  #scales to an average diagonal value of 1.
 ```
-**NOTE**: for larger data sets it may be more convinient to use the `geG()` function of the [BGData](https://github.com/quantgen/BGData) R-package. This function allows computing G without loading all the data in RAM and offers methods for multi-core computing. 
+**NOTE**: for larger data sets it may be more convinient to use the `getG()` function of the [BGData](https://github.com/quantgen/BGData) R-package. This function allows computing G without loading all the data in RAM and offers methods for multi-core computing. 
 
 
 #### (4)  Fitting a binary regression for (the "fixed effects" of) Clinical Coavariates using BGLR (COV)
